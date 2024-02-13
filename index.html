@@ -3,34 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>CriptONE</title>
 </head>
 <body>
     <header>
-        <img alt="Alura logo" src="images/Logo.png">
-    </header>
-    
+        <img class="logo" alt="Logo da Alura." src="./images/Logo.png">
+    </header>    
     <main>
-        <div>
-            <h2>Digite seu texto</h2>
-            <div>
-                <img alt="Info symbol" src="./images/bi_exclamation-circle-fill.png">
-                <p>Apenas letras minúsculas e sem acento.</p>
+        <div class="container__principal">
+            
+            <div class="container__campo">
+
+                <div class="container__campo-texto">
+                    <input class="campo__texto" type="text" placeholder="Digite seu texto"/>
+                </div>
+                
+                <div class="container__cripto">
+                    <div class="container__info">
+                        <img class="info" alt="Info symbol" src="./images/bi_exclamation-circle-fill.png">
+                        <p class="info__texto">Apenas letras minúsculas e sem acento.</p>
+                    </div>
+                    <div class="container__botoes">
+                        <button class="botao criptografar">Criptografar</button>
+                        <button class="botao descriptografar"">Descriptografar</button>    
+                    </div>
+                </div>
+            
             </div>
-            <div>
-                <button>Criptografar</button>
-                <button>Descriptografar</button>
+            
+            <div class="container__mensagem-criptografada">
+                <img class="container__mensagem-criptografada-imagem" alt="A woman with a magnifier looking to a diamond." src="./images/High quality products 1 1.png">
+                    <h2 class="container__mensagem-criptografada-titulo">Nenhuma mensagem encontrada</h2>
+                    <p class="container__mensagem-criptografada-texto">Digite um texto que você queira criptografar ou descriptografar.</p>   
             </div>
-        </div>
-        <div>
-            <img alt="A woman with a magnifier looking to a diamond." src="./images/High quality products 1 1.png">
-            <h2>Nenhuma mensagem encontrada</h2>
-            <p>Digite um texto que você queria criptografar ou descriptografar.</p>
+        
         </div>
     </main>
     
     <footer>
-
+        
     </footer>
 </body>
 </html>

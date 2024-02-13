@@ -1,0 +1,97 @@
+:root {
+    --main-bg-color: #E5E5E5;
+    --azul-escuro: #052051;
+    --cor-botao: #D8DFE8;
+    --cor-info: #65747D;
+    --cor-bg-campo-mensagem-criptografada: #FEFEFE;  
+    font-family: "inter", regular;
+}
+
+body, html, main {
+    height: 100%;
+    background-color: var(--main-bg-color);
+}
+
+.logo {   
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.container__principal {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container__campo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.campo__texto {
+    border: transparent;
+    background-color: var(--main-bg-color);
+    font-size: 2rem;
+}
+
+.campo__texto::placeholder {
+    color: var(--azul-escuro);
+}
+
+.container__cripto {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-start;
+}
+
+.container__info {
+    display: flex;
+    margin-bottom: .2rem;
+}
+
+.info__texto {
+    padding-left: .5rem;
+    color: var(--cor-info);
+}
+
+.container__botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botao {
+    margin: 1rem 1rem 1rem 0rem;
+    padding: 1.5rem 6rem;
+    border-radius: 1.5rem;
+    font-size: 16px;
+}
+
+.criptografar {
+    background-color: var(--azul-escuro);
+    color: var(--main-bg-color);
+}
+
+.descriptografar {
+    background-color: var(--cor-botao);
+    border-color: var(--azul-escuro);
+    color: var(--azul-escuro);
+}
+
+.container__mensagem-criptografada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-bg-campo-mensagem-criptografada);
+    border-radius: 1.8rem;
+    padding: 2rem;
+}
+
+.container__mensagem-criptografada-titulo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--cor-info);
+}
