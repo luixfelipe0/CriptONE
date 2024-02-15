@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="./script.js"></script>
     <title>CriptONE</title>
 </head>
 <body>
@@ -20,24 +21,24 @@
             <div class="container__campo">
 
                 <div class="container__campo-texto">
-                    <input class="campo__texto" type="text" placeholder="Digite seu texto"/>
+                    <input id="input" class="campo__texto" type="text" placeholder="Digite seu texto"/>
                 </div>
                 
                 <div class="container__cripto">
                     <div class="container__info">
-                        <img class="info" alt="Info symbol" src="./images/bi_exclamation-circle-fill.png">
+                        <img class="info" alt="Símbolo de informação." src="./images/bi_exclamation-circle-fill.png">
                         <p class="info__texto">Apenas letras minúsculas e sem acento.</p>
                     </div>
                     <div class="container__botoes">
-                        <button class="botao criptografar">Criptografar</button>
-                        <button class="botao descriptografar"">Descriptografar</button>    
+                        <button id="botaoCriptografar" class="botao criptografar">Criptografar</button>
+                        <button id="botaoDescriptografar" class="botao descriptografar"">Descriptografar</button>    
                     </div>
                 </div>
             
             </div>
             
-            <div class="container__mensagem-criptografada">
-                <img class="container__mensagem-criptografada-imagem" alt="A woman with a magnifier looking to a diamond." src="./images/High quality products 1 1.png">
+            <div id="container__mensagem-criptografada" class="container__mensagem-criptografada">
+                    <img class="container__mensagem-criptografada-imagem" alt="A woman with a magnifier looking to a diamond." src="./images/High quality products 1 1.png">
                     <h2 class="container__mensagem-criptografada-titulo">Nenhuma mensagem encontrada</h2>
                     <p class="container__mensagem-criptografada-texto">Digite um texto que você queira criptografar ou descriptografar.</p>   
             </div>
@@ -48,5 +49,7 @@
     <footer>
         
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>
